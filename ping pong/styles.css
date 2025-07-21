@@ -1,0 +1,17 @@
+.winner{
+    color: green;
+}
+.loser{
+    color: red;
+}
+.default{
+    color:black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+h2,h3{
+    display: inline-block;
+}

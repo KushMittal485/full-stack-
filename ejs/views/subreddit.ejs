@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head')  %>
+<body>
+    <h1>currently viewing <%= subdata.name %></h1>
+    <h3><%= subdata.description %></h3>
+    <hr>
+    <% for(let p of subdata.posts){ %>
+    <p><%= p.title %> - <%= p.author %></p>
+    <img src = "<%= p.img %>">
+    <br>
+    <% } %>
+</body>
+</html>
