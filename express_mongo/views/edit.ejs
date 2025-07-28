@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form action="/products/<%= product._id %>?_method=PATCH" method="post">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" value="<%= product.name %>">
+         <label for="cost">cost</label>
+        <input type="text" name="cost" id="cost" value="<%= product.cost %>">
+         <label for="category">category</label>
+         <select name="category" id="category">
+            <option value="fruit">fruit</option>
+            <option value="vegetable">vegetable</option>
+            <option value="dairy">dairy</option>
+         </select>
+         <button>submit</button>
+    </form>
+    <a href="/products/<%= product._id %>">cancel</a>
+</body>
+</html>
